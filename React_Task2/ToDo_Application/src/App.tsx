@@ -6,12 +6,7 @@ import { Task } from './types';
 
 function App() {
 
-  const [tasks, setTasks] = useState<Task[]>([{
-    id:1,
-    title: "Testing",
-    dueDate: new Date("2002-10-28"),
-    completed: false
-  }]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   return (
     <div id='container' className='bg-black w-screen h-screen flex-col justify-center items-center p-10'>
